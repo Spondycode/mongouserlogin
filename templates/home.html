@@ -2,6 +2,49 @@
 
 {% block content %}
 
-  <h1>Home and Away</h1>
+  <h1 class="center">Home and Away</h1>
+<div class="card-wrapper">
 
-{% endblock %}
+    <div class="card ">
+
+      <h1 class="center">Create an Account</h1>
+      <form name="signup_form">
+        <label for="name">Name</label>
+        <input type="text" name="name" value="name" class="field" required>
+
+        <label for="email">Email</label>
+        <input type="text" name="email" value="email" class="field" required>
+
+        <label for="password">Password</label>
+        <input type="text" name="password" value="password" class="field" required>
+
+        <p class='error error--hidden'></p>
+
+        <input type="submit" value="Sign Up" class="btn">
+      </form>
+      
+    </div>
+
+
+    <div class="card ">
+
+      <h1 class="center">Log In</h1>
+      <form name="Login"
+
+        <label for="email">Email</label>
+        <input type="text" name="email" value="email" class="field" required>
+
+        <label for="password">Password</label>
+        <input type="text" name="password" value="password" class="field" required>
+
+        <p class='error error--hidden'></p>
+
+        <input type="submit" value="Log In" class="btn">
+      </form>
+      
+    </div>
+
+
+
+</div>
+  {% endblock %}
